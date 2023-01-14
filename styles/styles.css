@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Work Sans;
+}
+
+/* header styles */
+header {
+  padding: 50px 230px;
+  background: rgba(255, 144, 14, 0.1);
+}
+/* navbar */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: #131313;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+}
+.nav-link li {
+  list-style-type: none;
+}
+.nav-link li a {
+  text-decoration: none;
+  margin-left: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+/* nav-banner styles */
+.nav-banner {
+  margin: 67px auto;
+}
+.banner-details {
+  width: 868px;
+  margin: 50px auto;
+  text-align: center;
+}
+.banner-title {
+  padding: 0 130px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: #131313;
+}
+.banner-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+  margin: 32px 0;
+}
+.banner-btn {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+  background: #ff900e;
+  border-radius: 8px;
+  padding: 20px 25px;
+  border: none;
+}
+.banner-logo {
+  margin-bottom: 67px;
+}
+.banner-logo img {
+  width: 100%;
+}
+
+/* responsive design for small device*/
+@media only screen and (max-width: 576px) {
+  header {
+    padding: 40px 15px;
+  }
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-bar .nav-title {
+    margin: 20px 0;
+    font-size: 35px;
+    line-height: 20px;
+  }
+  .nav-link {
+    flex-direction: column;
+  }
+  .nav-link li a {
+    margin-left: 0;
+  }
+
+  /* banner styles */
+  .nav-banner {
+    margin: 20px 15px;
+  }
+  .banner-details {
+    width: calc(100% - 30px);
+    text-align: left;
+  }
+  .banner-title {
+    padding: 0;
+    text-align: left;
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .banner-description {
+    text-align: justify;
+    font-size: 12px;
+    margin: 12px 0;
+  }
+  .banner-btn {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
